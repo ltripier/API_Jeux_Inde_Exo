@@ -2,8 +2,19 @@
 <html>
     <head>
         <title>{{ title }} - Bienvenue</title>
+        <link rel ="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <div class="navigation">
+            <div class="div_title">
+                <h1 class="title">{{ title }}</h1>
+            </div>
+            <div class="div_search">
+                <form class="form_search">
+                    <input class="input_search" type="text" name="name" required size="100"></input>
+                    <button class="button_search">Search</button>
+                </form>
+            </div>
+        </div>
     </body>
 </html>
