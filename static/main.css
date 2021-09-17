@@ -1,5 +1,4 @@
 body{
-    margin: 0;
     display: flex;
     font-family: 'Arial';
     background-image:url(images/fond.jpeg);
@@ -9,14 +8,11 @@ body{
 
 .navigation{
     margin: auto;
-    width: 70%;
-    height: 125px; 
-    background-color: rgba(18, 98, 163);
+    margin-top: 15%;
+    margin-bottom: 15%;
 }
 
 .title{
-    margin: 0;
-    padding-top: 20px;
     text-align: center;
     font-weight: bold;
 }
