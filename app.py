@@ -1,10 +1,27 @@
 from flask import Flask, render_template
+import requests
 
+url = "https://tastedive.com/api/similar?"
+key = "423979-David-BAQ5JQRC"
+type_res = "games" #  music, movies, shows, podcasts, books, authors, games
+info = str(1) # when set to 1, additional information is provided, like a description and a related Youtube clip (when available). 
+            # Default is 0.
 app = Flask(__name__)
 
+title='gameAPI'
 @app.route('/')
 def index():
-    return render_template('index.html', title='GameList')
+    return render_template('index.html', title=title)
+
+
+@app.route('/search', 'POST')
+def search(q):
+    q = "The Legend Of Zelda: Breath Of The Wild"
+    param = f"q={q}" + "&" + f"type={type_res}" + "&" + f"info={info}" + "&" + f"k={key}"
+    qry = url + param
+    r = requests.get(qry).json()
+
+    return render_template('search.html', r=r)    
 
 if __name__ == '__main__':
     app.run(debug = True)
