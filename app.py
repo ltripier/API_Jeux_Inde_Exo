@@ -1,5 +1,6 @@
-from flask import Flask, render_template
+from flask import Flask, render_template , request
 import requests
+
 
 url = "https://tastedive.com/api/similar?"
 key = "423979-David-BAQ5JQRC"
@@ -14,9 +15,10 @@ def index():
     return render_template('index.html', title=title)
 
 
-@app.route('/search', 'POST')
-def search(q):
-    q = "The Legend Of Zelda: Breath Of The Wild"
+@app.route('/search', methods=['POST'])
+def search():
+    inputVal = request.form["search-bar"]
+    q = inputVal
     param = f"q={q}" + "&" + f"type={type_res}" + "&" + f"info={info}" + "&" + f"k={key}"
     qry = url + param
     r = requests.get(qry).json()

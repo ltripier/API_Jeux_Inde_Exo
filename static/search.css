@@ -1,0 +1,23 @@
+
+.grid-col{
+    display: grid;
+    grid-template-columns: 300px auto;
+    align-items: center;
+    justify-items: center;
+}
+
+.grid-col p{
+    margin: auto;
+    margin-left: 10px;
+}
+table,
+td {
+    width: 100%;
+    border: 1px solid #333;
+}
+
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='search.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid-col">
+        <h1>le jeu rechercher est :</h1>
+        <p>{{r.Similar.Info.0.Name}}</p>
+    </div>
+    
+    <div class="similar">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2"><h2>liste de jeu similaire</h2></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for game in r.Similar.Results %}
+                <tr>
+                    <td><p>{{game.Name}}</p></td>
+                    <td><p>{{game.wTeaser}}</p></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        
+       
+            
+        </ul>
+        
+    </div>
+
+</body>
+</html>

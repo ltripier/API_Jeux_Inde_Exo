@@ -26,9 +26,12 @@ body{
 
 .input_search{
     height: 40px;
+    border-radius: 30px;
 }
 
 .button_search{
     background-color: white;
-    border: none;
+    border: solid 1px;
+   
+    
 }
