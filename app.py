@@ -7,6 +7,7 @@ key = "423979-David-BAQ5JQRC"
 type_res = "games" #  music, movies, shows, podcasts, books, authors, games
 info = str(1) # when set to 1, additional information is provided, like a description and a related Youtube clip (when available). 
             # Default is 0.
+
 app = Flask(__name__)
 
 title='gameAPI'
