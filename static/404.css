@@ -1,0 +1,43 @@
+body{
+
+    background-image: url("images/404.jpg");
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+
+}
+
+.btn-ctr{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.home{
+
+    width: 150px;
+    height: 47px;
+    left: 278px;
+    top: 555px;
+    color: white;
+    background: #5c6631;
+    font-family: 'Fredoka One', cursive;
+    border-radius: 30px;
+    outline: none;
+
+}
+
+.home:focus {
+    outline:none;
+}
+
+a {
+    color: white;
+	text-decoration: none;
+}
+
+a:hover {
+    color: white;
+	text-decoration: none;
+}
