@@ -10,9 +10,9 @@
                 <h1 class="title">{{ title }}</h1>
             </div>
             <div class="div_search">
-                <form class="form_search">
-                    <input class="input_search" type="text" name="name" required size="100"></input>
-                    <button class="button_search">Search</button>
+                <form class="form_search" action="/search" method="POST">
+                    <input class="input_search" type="text" name="q" required size="100"></input>
+                    <button type="submit" class="button_search">Search</button>
                 </form>
             </div>
         </div>
