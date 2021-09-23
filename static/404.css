@@ -9,6 +9,36 @@ body{
 
 }
 
+h1{
+    text-align: center;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-size: 85px;
+    padding-top: 150px;
+}
+
+h3{
+
+  text-align: center;
+  color: white;
+  font-family: 'Fredoka One', cursive;
+  font-size: 45px;
+  line-height: 108px;
+  font-weight: 700;
+ 
+ 
+}
+
+
+p{
+
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
 .btn-ctr{
     text-align: center;
     padding-top: 20px;
